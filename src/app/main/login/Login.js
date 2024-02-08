@@ -124,8 +124,7 @@ function Login() {
 
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { delay: 0.3 } }}>
               <Typography variant="subtitle1" color="inherit" className="mt-32">
-                Best Cargo Fleet Management Tool in the World
-                under the supervision of PM Emre
+                Best Cargo Fleet Management Tool in the World under the supervision of PM Emre
               </Typography>
             </motion.div>
           </div>

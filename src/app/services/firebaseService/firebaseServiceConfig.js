@@ -23,7 +23,6 @@ const config = process.env.NODE_ENV === 'production' ? prodConfig : devConfig;
 
 export default config;
 
-
 // // Import the functions you need from the SDKs you need
 // import { initializeApp } from "firebase/app";
 // import { getAnalytics } from "firebase/analytics";
