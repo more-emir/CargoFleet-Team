@@ -56,14 +56,14 @@ function Register() {
           <CardContent className="flex flex-col items-center justify-center w-full max-w-320">
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { delay: 0.2 } }}>
               <div className="flex items-center justif-center mb-32">
-                <img className="logo-icon w-48" src="assets/images/logos/fuse.svg" alt="logo" />
+                <img className="logo-icon w-48" src="assets/images/logos/logo.png" alt="logo" />
                 <div className="border-l-1 mr-4 w-1 h-40" />
                 <div>
                   <Typography className="text-24 font-semibold logo-text" color="inherit">
-                    FUSE
+                    Cargo
                   </Typography>
                   <Typography className="text-16 tracking-widest -mt-8 font-700" color="textSecondary">
-                    REACT
+                    Fleet
                   </Typography>
                 </div>
               </div>
@@ -130,7 +130,7 @@ function Register() {
           </div>
         </div>
       </motion.div>
-    </div >
+    </div>
   );
 }
 
