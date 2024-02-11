@@ -69,7 +69,7 @@ function Register() {
               </div>
             </motion.div>
 
-            <Tabs value={selectedTab} onChange={handleTabChange} variant="fullWidth" className="w-full mb-32">
+            {/* <Tabs value={selectedTab} onChange={handleTabChange} variant="fullWidth" className="w-full mb-32">
               <Tab
                 icon={<img className="h-40 p-4 bg-black rounded-12" src="assets/images/logos/jwt.svg" alt="firebase" />}
                 className="min-w-0"
@@ -84,6 +84,14 @@ function Register() {
                 icon={<img className="h-40" src="assets/images/logos/auth0.svg" alt="auth0" />}
                 className="min-w-0"
                 label="Auth0"
+              />
+            </Tabs> */}
+
+            <Tabs>
+              <Tab
+                icon={<img className="h-40" src="assets/images/logos/firebase.svg" alt="firebase" />}
+                className="min-w-0"
+                label="Firebase"
               />
             </Tabs>
 
@@ -110,19 +118,19 @@ function Register() {
             <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0, transition: { delay: 0.2 } }}>
               <Typography variant="h3" color="inherit" className="font-semibold leading-tight">
                 Welcome <br />
-                to the <br /> FUSE React!
+                to the <br /> Cargo Fleet!
               </Typography>
             </motion.div>
 
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { delay: 0.3 } }}>
               <Typography variant="subtitle1" color="inherit" className="mt-32">
-                Powerful and professional admin template for Web Applications, CRM, CMS, Admin Panels and more.
+                Best Cargo Fleet Management Tool in the World under the supervision of PM Emre
               </Typography>
             </motion.div>
           </div>
         </div>
       </motion.div>
-    </div>
+    </div >
   );
 }
 
