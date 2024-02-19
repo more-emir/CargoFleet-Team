@@ -110,6 +110,12 @@ function Login() {
             <Link className="font-normal mt-8" to="/">
               Back to Dashboard
             </Link>
+            <Link className="font-normal" to="/reset-password">
+              Reset Password
+            </Link>
+            <Link className="font-normal" to="/forgot-password">
+              Forgot Password
+            </Link>
           </div>
         </Card>
 
