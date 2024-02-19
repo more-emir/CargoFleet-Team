@@ -36,7 +36,6 @@ function Login() {
   const [selectedTab, setSelectedTab] = useState(0);
 
   function handleTabChange(event, value) {
-    console.log(value);
     setSelectedTab(value);
   }
 
