@@ -5,10 +5,12 @@ import CallbackConfig from 'app/main/callback/CallbackConfig';
 import DocumentationConfig from 'app/main/documentation/DocumentationConfig';
 import LoginConfig from 'app/main/login/LoginConfig';
 import LogoutConfig from 'app/main/logout/LogoutConfig';
+import ResetPasswordPageConfig from 'app/main/reset-password/ResetPasswordPageConfig';
 import pagesConfigs from 'app/main/pages/pagesConfigs';
 import RegisterConfig from 'app/main/register/RegisterConfig';
 import UserInterfaceConfig from 'app/main/user-interface/UserInterfaceConfig';
 import { Redirect } from 'react-router-dom';
+import ForgotPasswordPageConfig from 'app/main/forgot-password/ForgotPasswordPageConfig';
 
 const routeConfigs = [
   ...appsConfigs,
@@ -19,8 +21,10 @@ const routeConfigs = [
   LogoutConfig,
   LoginConfig,
   RegisterConfig,
+  ResetPasswordPageConfig,
   LogoutConfig,
-  CallbackConfig
+  CallbackConfig,
+  ForgotPasswordPageConfig
 ];
 
 const routes = [
