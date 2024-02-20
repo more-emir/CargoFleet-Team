@@ -21,7 +21,6 @@ const devConfig = {
 
 const config = process.env.NODE_ENV === 'production' ? prodConfig : devConfig;
 
-
 export default config;
 
 // // Import the functions you need from the SDKs you need

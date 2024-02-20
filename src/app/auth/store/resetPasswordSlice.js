@@ -11,9 +11,7 @@ export const resetLoginWithFireBase =
       return () => false;
     }
     return firebaseService.auth
-      .sendPasswordResetEmail(
-        email
-      )
+      .sendPasswordResetEmail(email)
 
       .catch(error => {
         const emailErrorCodes = [
@@ -31,7 +29,6 @@ export const resetLoginWithFireBase =
             message: error.message
           });
         }
-
 
         if (error.code === 'auth/invalid-api-key') {
           dispatch(showMessage({ message: error.message }));
