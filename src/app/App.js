@@ -24,7 +24,6 @@ const jss = create({
 });
 
 const generateClassName = createGenerateClassName({ disableGlobal: true });
-console.log(routes)
 
 const App = () => {
   return (
