@@ -5,13 +5,30 @@ import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import clsx from 'clsx';
 import { motion } from 'framer-motion';
+import { darken } from '@material-ui/core/styles/colorManipulator';
 import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 const useStyles = makeStyles(theme => ({
-  root: {}
+  root: {
+    background: `linear-gradient(to right, ${theme.palette.primary.dark} 0%, ${darken(
+      theme.palette.primary.dark,
+      0.5
+    )} 100%)`,
+    color: theme.palette.primary.contrastText
+  },
+  leftSection: {},
+  rightSection: {
+    background: `linear-gradient(to right, ${theme.palette.primary.dark} 0%, ${darken(
+      theme.palette.primary.dark,
+      0.5
+    )} 100%)`,
+    color: theme.palette.primary.contrastText
+  }
 }));
 
-function MailConfirmPage() {
+function MailConfirmPage(props) {
+  const user = useSelector(({ auth }) => auth.user);
   const classes = useStyles();
 
   return (
@@ -27,19 +44,19 @@ function MailConfirmPage() {
               </div>
 
               <Typography variant="h5" className="text-center mb-16 font-semibold">
-                Confirm your email address!
+                Recovery password
               </Typography>
 
               <Typography className="text-center mb-16 w-full" color="textSecondary">
-                A confirmation e-mail has been sent to <b>example@mymail.com</b>.
+                A reset password link has been sent on <b>{user.data.email}</b>.
               </Typography>
 
               <Typography className="text-center w-full" color="textSecondary">
-                Check your inbox and click on the "Confirm my email" link to confirm your email address.
+                Check your inbox and click on the link and follow the instructions.
               </Typography>
 
               <div className="flex flex-col items-center justify-center pt-32 pb-24">
-                <Link className="font-normal" to="/pages/auth/login">
+                <Link className="font-normal" to="/login">
                   Go back to login
                 </Link>
               </div>

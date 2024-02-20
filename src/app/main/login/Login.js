@@ -102,6 +102,12 @@ function Login() {
 
           <div className="flex flex-col items-center justify-center pb-32">
             <div>
+              <span className="font-normal mr-8">Forgot password?</span>
+              <Link className="font-normal" to="/forgot-password">
+                Reset Password
+              </Link>
+            </div>
+            <div>
               <span className="font-normal mr-8">Don't have an account?</span>
               <Link className="font-normal" to="/register">
                 Register

@@ -7,6 +7,7 @@ import Typography from '@material-ui/core/Typography';
 import { useDispatch } from 'react-redux';
 import { logoutUser } from 'app/auth/store/userSlice';
 
+
 const useStyles = makeStyles(theme => ({
   layoutRoot: {}
 }));
