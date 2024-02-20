@@ -34,19 +34,18 @@ function FirebaseResetTab(props) {
 
   const formRef = useRef(null);
 
-// useEffect(() => {
-//   login.errors.forEach(error => {
-//     setError(error.type, {
-//       type: 'manual',
-//       message: error.message
-//     });
-//   });
-  
-//   return () => {
-//     setError({});
-//   };
-// }, [login.errors, setError]);
+  // useEffect(() => {
+  //   login.errors.forEach(error => {
+  //     setError(error.type, {
+  //       type: 'manual',
+  //       message: error.message
+  //     });
+  //   });
 
+  //   return () => {
+  //     setError({});
+  //   };
+  // }, [login.errors, setError]);
 
   function onSubmit(model) {
     dispatch(resetLoginWithFireBase(model));
